@@ -55,7 +55,7 @@ option_prod() {
 # Command Usage: run
 # Command Description: Gradle project bootRun
 command_run() {
-  spring_profiles_active=${ABP_ENV} ./gradlew bootRun
+  hugo server --minify --theme book
 }
 
 # Command Usage: test <unit|function|integration>
